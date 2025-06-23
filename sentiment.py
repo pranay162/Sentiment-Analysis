@@ -4,6 +4,7 @@ from transformers import pipeline
 from sklearn.metrics import classification_report
 from datasets import load_dataset
 import matplotlib.pyplot as plt
+
 model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 model = BertForSequenceClassification.from_pretrained(model_name)
